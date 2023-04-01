@@ -151,11 +151,13 @@ p{
 }
 
 /* Footer Styling */
-#footer{
-   padding: 20px 10px;
-   display: flex;
+footer{
    background-color: #1a1a1a;
-   
+   padding: 20px 0;
+}
+#footer{
+   padding: 0 10px;
+   display: flex;
 }
 .footer-box{
    display: flex;
@@ -200,7 +202,16 @@ p{
 .ft-form{
    width: 225px;
 }
-
+/* Footer Copyright style */
+#copyright{
+   display: block;
+   margin: 5px auto;
+   text-align: center;
+   width: 85%;
+   background-color: #373737;
+   padding: 8px;
+   border-radius: 25px;
+}
 
 /* Responsive designing for other devices */
 @media only screen and (max-width: 768px) {
