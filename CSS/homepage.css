@@ -15,7 +15,7 @@
    justify-content: center;
    padding: 0 2rem 2rem 2rem;
    height: 84vh;
-   background-color: rgba(1, 1, 1, 0.425);
+   background-color: rgba(1, 1, 1, 0.6);
    text-align: center;
 }
 #home-banner::before{
@@ -28,4 +28,55 @@
    left: 0px;
    z-index: -1;
    /* opacity: 0.80; */
+}
+
+/* Quotes section design */
+#quotes-section{
+   padding: 4rem 0;
+}
+#quotes{
+   width: 70%;
+   margin: auto;
+   text-align: center;
+}
+#quotes-sign{
+   width: 350px;
+}
+/* Services Home design */
+#services-home{
+   padding: 2rem 0;
+}
+#services-home-bgI{
+   background: url(../Images/123-1.jpg) no-repeat top center/cover;
+}
+.services-home-heading{
+   padding: 4rem 2rem;
+   background-color: rgba(1, 1, 1, 0.42);
+   height: 320px;
+   
+}
+
+
+/* Responsive designing for other devices */
+@media only screen and (max-width: 768px) {
+
+   /* Quotes section */
+   #quotes{
+      width: 85%;
+   }
+   #quotes-sign{
+      width: 260px;
+   }
+
+   /* Services Home */
+   .services-home-heading{
+      height: 240px;
+   }
+}
+
+/* Responsive designing for other devices: 2 */
+@media only screen and (max-width: 576px) {
+
+   /* Services Home */
+
 }
