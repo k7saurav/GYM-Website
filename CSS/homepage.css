@@ -1,0 +1,31 @@
+/* This is the stylesheet for HomePage of this website */
+
+/* Custom CSS Variables */
+:root{
+   --color-1: #f36347;
+   --color-2: #1a1a1a;
+   --color-3: #d0d9e8;
+}
+
+/* homepage banner design */
+#home-banner{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 0 2rem 2rem 2rem;
+   height: 84vh;
+   background-color: rgba(1, 1, 1, 0.425);
+   text-align: center;
+}
+#home-banner::before{
+   content: "";
+   background: url('../Images/bg-home.jpg') no-repeat center center/cover;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   top: 0px;
+   left: 0px;
+   z-index: -1;
+   /* opacity: 0.80; */
+}
