@@ -7,15 +7,12 @@
    box-sizing: border-box;
    font-family: 'Poppins', sans-serif;
 }
-body{
-   background-color: #d0d9e8;
-}
 
 /* Custom CSS Variables */
 :root{
    --color-1: #f36347;
    --color-2: #1a1a1a;
-   --color-3: #d0d9e8;
+   --color-3: #dce4eb;
 }
 
 /* Utility Classes for universal uses */
@@ -38,8 +35,15 @@ h4{
    color: var(--color-3);
 }
 p{
-   font-size: 1.04rem;
+   font-size: 0.96rem;
    color: var(--color-2);
+}
+.p-small{
+   font-size: 0.9rem;
+}
+.p-large{
+   font-size: 1.06rem;
+   padding: 10px;
 }
 /* Utility Classes for responsive */
 @media only screen and (max-width: 768px) {
@@ -51,7 +55,7 @@ p{
       font-size: 1.85rem;
    }
    p{
-      font-size: 1rem;
+      font-size: 0.9rem;
    }
 }
 @media only screen and (max-width: 576px) {
@@ -185,6 +189,9 @@ footer{
    background-color: #1a1a1a;
    padding: 20px 0;
 }
+footer p{
+   font-size: 0.96rem;
+}
 #footer{
    padding: 0 10px;
    display: flex;
@@ -210,7 +217,7 @@ footer{
    padding: 5px;
 }
 .footer-contact > i{
-   font-size: 1.4rem;
+   font-size: 1.2rem;
    color: white;
 }
 .footer-contact p{
