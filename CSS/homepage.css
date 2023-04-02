@@ -46,8 +46,8 @@
 #services-home{
    padding: 2rem 0;
 }
-#services-home-bgI{
-   background: url(../Images/123-1.jpg) no-repeat top center/cover;
+#services-home-bgi{
+   background: url('../Images/123-1.jpg') no-repeat top center/cover;
 }
 .services-home-heading{
    padding: 4rem 2rem;
