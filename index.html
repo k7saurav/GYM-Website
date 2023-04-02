@@ -17,7 +17,7 @@
 <body>
 
    <!-- Header for all the pages -->
-   <header class="header" id="header-main">
+   <header class="header">
       <div class="logo">
          <a href="index.html"><img src="Images/logo.png" alt="MyGYM Logo"></a>
       </div>
@@ -55,10 +55,12 @@
    <!-- Home Page contents starts here -->
    <main>
       <!-- Home Page banner -->
-      <section id="home-banner">
-         <h1>Welcome to <span id="h-span">MyGYM</span></h1>
-         <p class="p-white">Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem, ipsum.</p><br>
-         <button class="btn">Click Here</button>
+      <section id="home-banner-bgi">
+         <div class="home-banner">
+            <h1>Welcome to <span id="h-span">MyGYM</span></h1>
+            <p class="p-white">Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem, ipsum.</p><br>
+            <button class="btn">Click Here</button>
+         </div>
       </section>
 
       <!-- Motivational Quotes -->
@@ -150,17 +152,6 @@
    </footer>
 
    <!-- JavaScript code for dropdown menu in responsive design -->
-   <script>
-      const toggleBtn = document.querySelector('.toggle-btn')
-      const toggleBtnIcon = document.querySelector('.toggle-btn i')
-      const dropDownMenu = document.querySelector('.dropdown-menu')
-
-      toggleBtn.onclick = function() {
-         dropDownMenu.classList.toggle('open')
-         const isOpen = dropDownMenu.classList.contains('open')
-
-         toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
-      }
-   </script>
+   <script src="JS/app.js"></script>
 </body>
 </html>

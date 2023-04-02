@@ -18,7 +18,7 @@
 <body>
    
    <!-- Header for all the pages -->
-   <header class="header" id="header-main">
+   <header class="header">
       <div class="logo">
          <a href="index.html"><img src="Images/logo.png" alt="MyGYM Logo"></a>
       </div>
@@ -103,18 +103,7 @@
    </footer>
 
    <!-- JavaScript code for dropdown menu in responsive design -->
-   <script>
-      const toggleBtn = document.querySelector('.toggle-btn')
-      const toggleBtnIcon = document.querySelector('.toggle-btn i')
-      const dropDownMenu = document.querySelector('.dropdown-menu')
-
-      toggleBtn.onclick = function() {
-         dropDownMenu.classList.toggle('open')
-         const isOpen = dropDownMenu.classList.contains('open')
-
-         toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
-      }
-   </script>
+   <script src="JS/app.js"></script>
 </body>
 </html>
 </body>
