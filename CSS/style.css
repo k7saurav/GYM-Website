@@ -20,7 +20,7 @@ h1{
    font-size: 3.1rem;
    color: var(--color-3);
 }
-#h-span{
+.h-span{
    color: var(--color-1);
 }
 h2{
@@ -82,6 +82,21 @@ p{
 .btn:hover{
    background-color: white;
    color: var(--color-1);
+}
+
+.btn-2{
+   padding: 10px 25px;
+   font-size: 0.94rem;
+   font-weight: 500;
+   border: 2px solid gray;
+   border-radius: 25px;
+   transition: 300ms;
+   cursor: pointer;
+}
+.btn-2:hover{
+   border-color: var(--color-1);
+   background-color: var(--color-1);
+   color: white;
 }
 
 /* ~~ end of universal styling ~~ */

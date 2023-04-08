@@ -5,6 +5,7 @@
    --color-1: #f36347;
    --color-2: #1a1a1a;
    --color-3: #dce4eb;
+   --color-bg: rgba(1, 1, 1, 0.42);
 }
 
 /* homepage banner design */
@@ -18,7 +19,7 @@
    justify-content: center;
    padding: 2rem;
    height: 96vh;
-   background-color: rgba(1, 1, 1, 0.6);
+   background-color: var(--color-bg);
    text-align: center;
 }
 
@@ -40,11 +41,11 @@
    padding: 0 0 5rem;
 }
 #services-home-bgi{
-   background: url('../Images/123-1.jpg') no-repeat top center/cover;
+   background: url('../Images/bg-services-home.jpg') no-repeat top center/cover;
 }
 .services-home-heading{
    padding: 4rem 2rem;
-   background-color: rgba(1, 1, 1, 0.42);
+   background-color: var(--color-bg);
    height: 320px;
 }
 /* service home boxes design */
@@ -75,6 +76,14 @@
    border-bottom: 2px solid #f0f0f0;
    border-right: 2px solid #f0f0f0;
 }
+#services-home-box-1:hover{
+   box-shadow: 0 5px 5px 0 #f0f0f0;
+   transition: 300ms;
+}
+   #services-home-box-3:hover{
+   box-shadow: 0 5px 5px 0 #f0f0f0;
+   transition: 300ms;
+}
 .services-home-box > h4, p{
    padding: 6px 0;
 }
@@ -82,6 +91,29 @@
    font-size: 2rem;
    padding: 10px;
 }
+.services-home-box > i:hover{
+   color: var(--color-1);
+   scale: 1.15;
+   transition: 400ms;
+}
+
+/* Workout schedule design */
+.img-and-content{
+   display: flex;
+}
+.image-part-bgi{
+   width: 50%;
+   background: url('../Images/workout-schedule.jpg') no-repeat center center/cover;
+}
+.image-part-heading{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 500px;
+   background-color: var(--color-bg);   
+}
+
 
 
 /* Responsive designing for other devices */
@@ -119,4 +151,12 @@
    .services-home-content{
       flex-direction: column;
    }
+   /* #services-home-box-1:hover{
+      box-shadow: 0 5px 5px 2px #f0f0f0;
+      transition: 300ms;
+   }
+   #services-home-box-3:hover{
+      box-shadow: 0 5px 5px 2px #f0f0f0;
+      transition: 300ms;
+   } */
 }
