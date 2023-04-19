@@ -101,10 +101,18 @@
 .img-and-content{
    display: flex;
 }
-.image-part-bgi{
-   width: 50%;
+#bgi-workout-schedule{
    background: url('../Images/workout-schedule.jpg') no-repeat center center/cover;
 }
+#bgi-about-trainer{
+   background: url('../Images/about-trainer.jpg') no-repeat top center/cover;
+}
+.image-part-bgi, .content-part{
+   width: 50%;
+}
+/* .content-part{
+   width: 50%;
+} */
 .image-part-heading{
    display: flex;
    flex-direction: column;
