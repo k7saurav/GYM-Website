@@ -45,6 +45,12 @@ p{
    font-size: 1.06rem;
    padding: 10px;
 }
+.p-article{
+   line-height: 1.8;
+}
+.blank-height{
+   height: 5rem;
+}
 /* Utility Classes for responsive */
 @media only screen and (max-width: 768px) {
    h1{
@@ -88,7 +94,7 @@ p{
    padding: 10px 25px;
    font-size: 0.94rem;
    font-weight: 500;
-   border: 2px solid gray;
+   border: 2px solid lightgray;
    border-radius: 25px;
    transition: 300ms;
    cursor: pointer;
@@ -100,6 +106,7 @@ p{
 }
 
 /* ~~ end of universal styling ~~ */
+
 
 /* Header styling */
 .header{
@@ -229,6 +236,7 @@ footer p{
 /* footer brief contact info and newsletter design */
 .footer-contact{
    display: flex;
+   align-items: center;
    padding: 5px;
 }
 .footer-contact > i{

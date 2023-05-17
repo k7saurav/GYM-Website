@@ -37,9 +37,6 @@
    width: 350px;
 }
 /* Services Home design */
-#services-home{
-   padding: 0 0 5rem;
-}
 #services-home-bgi{
    background: url('../Images/bg-services-home.jpg') no-repeat top center/cover;
 }
@@ -53,7 +50,7 @@
    display: flex;
    width: 88%;
    margin: auto;
-   padding: 0 0 2rem;
+   padding: 0 0 1rem;
    margin-top: -80px;
    background-color: white;
 }
@@ -102,10 +99,10 @@
    display: flex;
 }
 #bgi-workout-schedule{
-   background: url('../Images/workout-schedule.jpg') no-repeat center center/cover;
+   background: url('../Images/workout-schedule.jpg') no-repeat top center/cover;
 }
 #bgi-about-trainer{
-   background: url('../Images/about-trainer.jpg') no-repeat top center/cover;
+   background: url('../Images/about-trainer.jpg') no-repeat center center/cover;
 }
 .image-part-bgi, .content-part{
    width: 50%;
@@ -115,13 +112,43 @@
 } */
 .image-part-heading{
    display: flex;
-   flex-direction: column;
+   /* flex-direction: column; */
    align-items: center;
    justify-content: center;
-   height: 500px;
-   background-color: var(--color-bg);   
+   height: 640px;
+   background-color: var(--color-bg); 
 }
 
+/* img-and-content section */
+
+/* training schedule content */
+.content-part{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   box-shadow: 5px 0 8px 3px #f0f0f0;
+}
+.workout-timing{
+   display: flex;
+   width: 80%;
+   padding: 1.5rem 0;
+   align-items: center;
+   justify-content: space-between;
+   border-bottom: 1px solid lightgray;
+}
+.schedule-part > h4{
+   border-left: 3px solid var(--color-1);
+   padding: 0 8px;
+}
+
+/* about the trainer section */
+.img-and-content-reverse{
+   flex-direction: row-reverse;
+}
+.about-trainer{
+   width: 80%;
+}
 
 
 /* Responsive designing for other devices */
@@ -146,7 +173,25 @@
    }
    .services-home-box{
    padding: 2.5rem 1.5rem;
-}
+   }
+
+   /* img-and-content section */
+   .img-and-content{
+      flex-direction: column;
+   }
+   .image-part-bgi, .content-part{
+      width: 100%;
+   }
+   .workout-timing, .about-trainer{
+      width: 90%;
+   }
+   .content-part{
+      box-shadow: 0 5px 8px 3px #f0f0f0;
+      padding: 2rem 0 4rem;
+   }
+   .image-part-heading{
+      height: 360px;
+   }
 }
 
 /* Responsive designing for other devices: 2 */
@@ -159,12 +204,9 @@
    .services-home-content{
       flex-direction: column;
    }
-   /* #services-home-box-1:hover{
-      box-shadow: 0 5px 5px 2px #f0f0f0;
-      transition: 300ms;
+   
+   /* img-and-content section */
+   .image-part-heading{
+      height: 260px;
    }
-   #services-home-box-3:hover{
-      box-shadow: 0 5px 5px 2px #f0f0f0;
-      transition: 300ms;
-   } */
 }
